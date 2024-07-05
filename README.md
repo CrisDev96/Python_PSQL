@@ -3,9 +3,10 @@
 ## Tabla de contenido
 - [Resumen](#resumen)
 - [Requerimientos](#requerimientos)
-- [Instalacion](#instalacion)
+- [Instalación](#instalación)
 - [Endpoints](#endpoints)
-- [Documentacion] (#documentacion)
+- [Documentación](#documentación)
+
 
 ## Resumen
 Desarrollo_PythonPSQL es un proyecto basado en Django que demuestra la integración con PostgreSQL. El proyecto incluye una API REST para la gestión y obtención del número total de registros en una tabla específica.
@@ -39,7 +40,7 @@ Desarrollo_PythonPSQL es un proyecto basado en Django que demuestra la integraci
 **Obtener el número total de registros**
 http://127.0.0.1:8000/employees/employee_count/
 
-## Documentacion
+## Documentación
 **Para más detalles sobre el uso del endpoint, visita:**
 http://127.0.0.1:8000/employees/employee_count/
 
