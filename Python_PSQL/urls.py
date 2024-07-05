@@ -19,6 +19,8 @@ from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
+
+# Configuración de la vista del esquema Swagger
 schema_view = get_schema_view(
    openapi.Info(
       title="Python y PSQL",
@@ -29,8 +31,9 @@ schema_view = get_schema_view(
    permission_classes=(permissions.AllowAny,)
 )
 
+# Lista de URLs configuradas
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('employees/', include('employees.urls')),
-    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('employees/', include('employees.urls')), # URLs de la aplicación 'employees'
+    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'), # URL para la interfaz de Swagger
 ]
