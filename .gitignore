@@ -1,0 +1,37 @@
+# Entorno virtual
+env_desarrollo/
+venv/
+__pycache__/
+*.py[cod]
+*.so
+
+# Archivos de configuración de bases de datos locales
+*.sqlite3
+
+# Archivos de configuración sensibles
+*.env
+.env.local
+.env.production
+.env.*
+!env.example
+
+# Archivos de log
+*.log
+
+# Archivos de migraciones de Django
+*/migrations/*.pyc
+*/migrations/*.log
+*/migrations/*.sql
+*/migrations/*.py
+
+# Configuración de IDEs
+.vscode/
+.idea/
+*.iml
+
+# Otros archivos específicos del sistema operativo
+.DS_Store
+*.swp
+
+# Archivos de Docker
+docker-compose.yml
